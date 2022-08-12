@@ -1,0 +1,138 @@
+/* ------------------------------------- */
+/* .....Basic Setup..... */
+/* -------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------- */
+/* .....Student Form..... */
+/* -------------------------------------- */
+
+.studentHead {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 50px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+}
+ /* ------------------------------- */
+ /* ....Media Query  .......... */
+ /* ---------------------------------- */
+
+@media (max-width:767px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .studentHead {
+        padding: 50px;
+        font-size: 40px;
+    }
+
+    .studentForm {    
+        /* width: 50%; */
+        border: 2px solid red;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .mainList {
+        width: 50% !important;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .mainList {
+        width: 70% !important;
+        padding: 20px;
+    }
+
+    .studentHead {
+        padding: 50px;
+        font-size: 30px;
+    }
+}
+
+/* ..end Media query... */
+
+
+
+.studentForm {
+    /* width: 30%; */
+    border: 2px solid red;
+    padding: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input{
+    padding: 8px;
+    width: 300px;
+    margin-bottom:10px;
+    border: 1px solid black;
+}
+
+
+
+#storage {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.submitButton {
+    padding: 10px 15px;
+    border: none;
+    width: 100px;
+    font-size: 15px;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+/* .....Student Details..... */
+/* -------------------------------------- */
+
+.mainList {
+    width: 30%;
+    padding: 10px;
+}
+
+.studentCard {
+    width: auto;
+    padding: 10px;
+    border: 2px solid yellow;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.editButton {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: green;
+    cursor: pointer;
+    margin: 5px 5px 5px  0;
+}
+
+.deleteButton {
+    padding: 5px 8px;
+    font-size: 15px;
+    background-color: red;
+    cursor: pointer;
+}
+
